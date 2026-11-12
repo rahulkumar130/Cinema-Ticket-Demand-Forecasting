@@ -1,0 +1,62 @@
+{
+  "created_at_utc": "2026-11-12T05:55:11.435655+00:00",
+  "seed": 42,
+  "horizon_hours": 48,
+  "split_dates": {
+    "train_frac": 0.7,
+    "val_frac": 0.15,
+    "test_frac": 0.15,
+    "train_end_date": "2025-01-12",
+    "val_end_date": "2025-04-03",
+    "test_end_date": "2025-06-23"
+  },
+  "best_model_name": "HistGradientBoosting",
+  "best_params": {
+    "max_iter": 250,
+    "max_depth": 4,
+    "learning_rate": 0.08,
+    "min_samples_leaf": 40,
+    "random_state": 42
+  },
+  "best_val_mae_tickets": 10.9181,
+  "cqr_delta_occ": 0.01512,
+  "feature_columns": [
+    "slot",
+    "screen_id",
+    "screen_type",
+    "genre",
+    "language",
+    "rating",
+    "weekday",
+    "month",
+    "is_weekend",
+    "is_tuesday",
+    "is_holiday",
+    "is_special_event",
+    "show_hour",
+    "capacity",
+    "ticket_price",
+    "runtime_min",
+    "movie_age_days",
+    "shows_so_far_movie",
+    "is_new_movie",
+    "is_low_history",
+    "movie_occ_mean_all",
+    "movie_occ_mean_7d",
+    "movie_occ_mean_14d",
+    "movie_sold_out_rate_all",
+    "movie_slot_occ_mean",
+    "movie_weekday_occ_mean",
+    "genre_slot_occ_prior",
+    "genre_occ_prior",
+    "slot_weekday_occ_prior",
+    "movie_effective_occ_prior"
+  ],
+  "versions": {
+    "python": "3.11.15",
+    "scikit_learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "joblib": "1.4.2"
+  }
+}

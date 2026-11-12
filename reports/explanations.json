@@ -1,0 +1,269 @@
+{
+  "best_model_name": "HistGradientBoosting",
+  "global_permutation_importance": [
+    {
+      "feature": "movie_age_days",
+      "importance_occ_mae": 6.6941,
+      "std_occ_mae": 0.0703
+    },
+    {
+      "feature": "slot_weekday_occ_prior",
+      "importance_occ_mae": 1.8886,
+      "std_occ_mae": 0.0952
+    },
+    {
+      "feature": "weekday",
+      "importance_occ_mae": 0.8779,
+      "std_occ_mae": 0.047
+    },
+    {
+      "feature": "movie_slot_occ_mean",
+      "importance_occ_mae": 0.5418,
+      "std_occ_mae": 0.021
+    },
+    {
+      "feature": "movie_occ_mean_7d",
+      "importance_occ_mae": 0.4289,
+      "std_occ_mae": 0.0303
+    },
+    {
+      "feature": "movie_occ_mean_14d",
+      "importance_occ_mae": 0.2496,
+      "std_occ_mae": 0.0212
+    },
+    {
+      "feature": "movie_weekday_occ_mean",
+      "importance_occ_mae": 0.2155,
+      "std_occ_mae": 0.0103
+    },
+    {
+      "feature": "is_special_event",
+      "importance_occ_mae": 0.1511,
+      "std_occ_mae": 0.0276
+    },
+    {
+      "feature": "movie_effective_occ_prior",
+      "importance_occ_mae": 0.1159,
+      "std_occ_mae": 0.0159
+    },
+    {
+      "feature": "capacity",
+      "importance_occ_mae": 0.0842,
+      "std_occ_mae": 0.0086
+    },
+    {
+      "feature": "slot",
+      "importance_occ_mae": 0.061,
+      "std_occ_mae": 0.0101
+    },
+    {
+      "feature": "genre_slot_occ_prior",
+      "importance_occ_mae": 0.059,
+      "std_occ_mae": 0.0153
+    },
+    {
+      "feature": "is_holiday",
+      "importance_occ_mae": 0.0423,
+      "std_occ_mae": 0.0078
+    },
+    {
+      "feature": "ticket_price",
+      "importance_occ_mae": 0.0316,
+      "std_occ_mae": 0.0088
+    },
+    {
+      "feature": "is_tuesday",
+      "importance_occ_mae": 0.0186,
+      "std_occ_mae": 0.0034
+    },
+    {
+      "feature": "show_hour",
+      "importance_occ_mae": 0.0178,
+      "std_occ_mae": 0.0032
+    },
+    {
+      "feature": "shows_so_far_movie",
+      "importance_occ_mae": 0.0172,
+      "std_occ_mae": 0.0097
+    },
+    {
+      "feature": "language",
+      "importance_occ_mae": 0.0129,
+      "std_occ_mae": 0.0016
+    },
+    {
+      "feature": "screen_type",
+      "importance_occ_mae": 0.0104,
+      "std_occ_mae": 0.0047
+    },
+    {
+      "feature": "movie_occ_mean_all",
+      "importance_occ_mae": 0.0054,
+      "std_occ_mae": 0.0059
+    },
+    {
+      "feature": "genre_occ_prior",
+      "importance_occ_mae": 0.0045,
+      "std_occ_mae": 0.0021
+    },
+    {
+      "feature": "is_low_history",
+      "importance_occ_mae": 0.0,
+      "std_occ_mae": 0.0
+    },
+    {
+      "feature": "is_weekend",
+      "importance_occ_mae": 0.0,
+      "std_occ_mae": 0.0
+    },
+    {
+      "feature": "screen_id",
+      "importance_occ_mae": -0.0001,
+      "std_occ_mae": 0.0036
+    },
+    {
+      "feature": "is_new_movie",
+      "importance_occ_mae": -0.0006,
+      "std_occ_mae": 0.0003
+    },
+    {
+      "feature": "movie_sold_out_rate_all",
+      "importance_occ_mae": -0.0036,
+      "std_occ_mae": 0.0087
+    },
+    {
+      "feature": "month",
+      "importance_occ_mae": -0.0041,
+      "std_occ_mae": 0.0038
+    },
+    {
+      "feature": "rating",
+      "importance_occ_mae": -0.0124,
+      "std_occ_mae": 0.0066
+    },
+    {
+      "feature": "runtime_min",
+      "importance_occ_mae": -0.016,
+      "std_occ_mae": 0.0051
+    },
+    {
+      "feature": "genre",
+      "importance_occ_mae": -0.0458,
+      "std_occ_mae": 0.0215
+    }
+  ],
+  "local_accurate_case": {
+    "case": "accurate_prediction",
+    "show_id": "SHW-018363",
+    "show_date": "2025-04-04",
+    "slot": "evening",
+    "screen_id": "SCR-01",
+    "screen_type": "Standard",
+    "capacity": 85,
+    "movie_id": "MOV-035",
+    "genre": "Comedy",
+    "movie_age_days": 3,
+    "shows_so_far_movie": 10,
+    "is_holiday": 0,
+    "is_special_event": 0,
+    "actual_tickets": 57,
+    "predicted_tickets": 59.9,
+    "residual_tickets": -2.9,
+    "interval_80_tickets": [
+      51.0,
+      76.0
+    ],
+    "top_drivers": [
+      {
+        "feature": "movie_age_days",
+        "shap_occ_impact": 0.2157
+      },
+      {
+        "feature": "slot",
+        "shap_occ_impact": 0.1388
+      },
+      {
+        "feature": "movie_slot_occ_mean",
+        "shap_occ_impact": 0.0434
+      },
+      {
+        "feature": "weekday",
+        "shap_occ_impact": 0.0245
+      },
+      {
+        "feature": "movie_occ_mean_7d",
+        "shap_occ_impact": 0.0149
+      },
+      {
+        "feature": "movie_occ_mean_14d",
+        "shap_occ_impact": 0.013
+      },
+      {
+        "feature": "capacity",
+        "shap_occ_impact": -0.0109
+      },
+      {
+        "feature": "runtime_min",
+        "shap_occ_impact": -0.0064
+      }
+    ],
+    "plain_language_explanation": "For Comedy Feature #35 (Comedy, age 3d) in SCR-01 (Standard, cap 85) during evening on 2025-04-04, the model predicted 60 tickets (80% interval: 51-76) and actual sales were 57 (error -2.9). Key drivers: movie_age_days (+0.216 occ), slot (+0.139 occ), movie_slot_occ_mean (+0.043 occ). Limitation: point forecast assumes normal weather/external competition and T-48h pricing remains fixed."
+  },
+  "local_large_error_case": {
+    "case": "large_error",
+    "show_id": "SHW-018800",
+    "show_date": "2025-04-14",
+    "slot": "late",
+    "screen_id": "SCR-08",
+    "screen_type": "IMAX",
+    "capacity": 302,
+    "movie_id": "MOV-018",
+    "genre": "Comedy",
+    "movie_age_days": 65,
+    "shows_so_far_movie": 254,
+    "is_holiday": 0,
+    "is_special_event": 1,
+    "actual_tickets": 106,
+    "predicted_tickets": 20.3,
+    "residual_tickets": 85.7,
+    "interval_80_tickets": [
+      7.0,
+      49.3
+    ],
+    "top_drivers": [
+      {
+        "feature": "movie_age_days",
+        "shap_occ_impact": -0.0992
+      },
+      {
+        "feature": "slot",
+        "shap_occ_impact": -0.0396
+      },
+      {
+        "feature": "is_special_event",
+        "shap_occ_impact": 0.0387
+      },
+      {
+        "feature": "movie_slot_occ_mean",
+        "shap_occ_impact": -0.0256
+      },
+      {
+        "feature": "weekday",
+        "shap_occ_impact": -0.0193
+      },
+      {
+        "feature": "movie_occ_mean_7d",
+        "shap_occ_impact": -0.0171
+      },
+      {
+        "feature": "movie_occ_mean_14d",
+        "shap_occ_impact": -0.0167
+      },
+      {
+        "feature": "movie_effective_occ_prior",
+        "shap_occ_impact": -0.0136
+      }
+    ],
+    "plain_language_explanation": "Largest error (+85.7 tickets): Comedy Feature #18 (Comedy, established title, age 65d, 254 prior shows) on 2025-04-14 (public holiday / promo event, late) in SCR-08 (cap 302). Model predicted 20 (80% interval: 7-49) vs actual 106 (sold_out=0). Top drivers: movie_age_days (-0.099 occ), slot (-0.040 occ), is_special_event (+0.039 occ). Why it missed: at T-48h, unobserved movie-specific buzz/random demand shock (or sparse cold-start/holiday interaction) pushed attendance well outside the expected mean."
+  }
+}

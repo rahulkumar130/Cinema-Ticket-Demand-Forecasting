@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment & Secrets
+.env
+
+# Generated Data & Artifacts (keep directory structure via .gitkeep)
+data/raw/*.csv
+data/raw/*.parquet
+data/processed/*.csv
+data/processed/*.parquet
+models/*.joblib
+models/*.pkl
+mlruns/
+
+# OS
+.DS_Store
+Thumbs.db
+

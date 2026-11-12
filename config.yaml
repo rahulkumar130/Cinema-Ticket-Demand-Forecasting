@@ -1,0 +1,44 @@
+project:
+  name: cinema-demand-forecasting
+  seed: 42
+  horizon_hours: 48
+paths:
+  raw_data: data/raw/shows_raw.csv
+  cleaned_data: data/processed/shows_clean.parquet
+  features_data: data/processed/shows_features.parquet
+  model_bundle: models/model_bundle.joblib
+  model_metadata: models/model_metadata.json
+  experiment_log: reports/experiments.csv
+  metrics_report: reports/metrics.json
+  figures_dir: reports/figures
+data_generation:
+  seed: 42
+  start_date: '2024-01-01'
+  n_days: 540
+  n_movies: 65
+  n_screens: 8
+  missing_rate: 0.015
+  duplicate_rate: 0.005
+  outlier_rate: 0.003
+split:
+  train_frac: 0.7
+  val_frac: 0.15
+  test_frac: 0.15
+  train_end_date: '2025-01-12'
+  val_end_date: '2025-04-03'
+  test_end_date: '2025-06-23'
+features:
+  new_movie_max_age_days: 3
+  low_history_max_shows: 5
+  rolling_windows:
+  - 7
+  - 14
+evaluation:
+  occupancy_tolerance: 0.1
+  capacity_buckets:
+  - 0
+  - 120
+  - 220
+  - 1000
+  under_forecast_cost_per_ticket: 8.0
+  over_forecast_cost_per_ticket: 3.0

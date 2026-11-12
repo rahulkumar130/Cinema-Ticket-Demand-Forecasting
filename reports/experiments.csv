@@ -1,0 +1,17 @@
+model_family,params,cv_mae_tickets,val_n_shows,val_mae_tickets,val_rmse_tickets,val_wape_pct,val_mae_occ_pts,val_within_10_occ_pts_pct,val_clip_outside_pct,val_total_business_cost,val_mean_business_cost_per_show,val_sold_out_actual_count,val_sold_out_precision_point,val_sold_out_recall_point
+Baseline,{},,3237,34.7562,48.9766,63.9481,20.4066,32.62,0.0,595958.73,184.11,36,0.0091,0.0556
+Ridge,"{""alpha"": 0.5}",,3237,14.5367,20.9797,26.7461,8.5005,67.5,2.595,254911.2,78.75,36,0.1667,0.0278
+Ridge,"{""alpha"": 5.0}",,3237,14.5217,20.9544,26.7185,8.4917,67.56,2.595,254984.34,78.77,36,0.1667,0.0278
+Ridge,"{""alpha"": 25.0}",14.4567,3237,14.4746,20.8893,26.6319,8.4628,67.35,2.78,255289.84,78.87,36,0.5,0.0278
+RandomForest,"{""n_estimators"": 150, ""max_depth"": 10, ""min_samples_leaf"": 5, ""random_state"": 42}",10.5923,3237,12.078,17.5326,22.2223,7.0469,76.55,0.0,227213.18,70.19,36,0.3871,0.3333
+RandomForest,"{""n_estimators"": 150, ""max_depth"": 10, ""min_samples_leaf"": 15, ""random_state"": 42}",,3237,12.171,17.8451,22.3935,7.0869,76.61,0.0,228590.92,70.62,36,0.3667,0.3056
+RandomForest,"{""n_estimators"": 150, ""max_depth"": 14, ""min_samples_leaf"": 5, ""random_state"": 42}",,3237,12.0921,17.4917,22.2484,7.0597,77.23,0.0,226978.26,70.12,36,0.3871,0.3333
+RandomForest,"{""n_estimators"": 150, ""max_depth"": 14, ""min_samples_leaf"": 15, ""random_state"": 42}",,3237,12.1626,17.8037,22.378,7.0842,76.8,0.0,228445.58,70.57,36,0.3667,0.3056
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 4, ""learning_rate"": 0.05, ""min_samples_leaf"": 20, ""random_state"": 42}",,3237,10.9326,15.3571,20.115,6.4121,80.07,0.371,196948.68,60.84,36,0.6071,0.4722
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 4, ""learning_rate"": 0.05, ""min_samples_leaf"": 40, ""random_state"": 42}",,3237,10.9614,15.3363,20.1679,6.4216,79.95,0.216,198978.41,61.47,36,0.6667,0.4444
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 4, ""learning_rate"": 0.08, ""min_samples_leaf"": 20, ""random_state"": 42}",,3237,10.9283,15.3872,20.1071,6.4183,80.2,0.494,199086.47,61.5,36,0.4857,0.4722
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 4, ""learning_rate"": 0.08, ""min_samples_leaf"": 40, ""random_state"": 42}",10.3212,3237,10.9181,15.2675,20.0882,6.4167,80.23,0.432,195537.59,60.41,36,0.5926,0.4444
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 6, ""learning_rate"": 0.05, ""min_samples_leaf"": 20, ""random_state"": 42}",,3237,11.0649,15.6102,20.3584,6.4853,79.39,0.371,201932.95,62.38,36,0.5556,0.4167
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 6, ""learning_rate"": 0.05, ""min_samples_leaf"": 40, ""random_state"": 42}",,3237,11.0502,15.5784,20.3313,6.4871,79.64,0.278,201376.59,62.21,36,0.5667,0.4722
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 6, ""learning_rate"": 0.08, ""min_samples_leaf"": 20, ""random_state"": 42}",,3237,10.9699,15.4221,20.1836,6.4382,80.35,0.247,200334.24,61.89,36,0.5484,0.4722
+HistGradientBoosting,"{""max_iter"": 250, ""max_depth"": 6, ""learning_rate"": 0.08, ""min_samples_leaf"": 40, ""random_state"": 42}",,3237,11.0286,15.5123,20.2916,6.4704,79.8,0.247,198430.46,61.3,36,0.4722,0.4722
